@@ -5,7 +5,12 @@
 my_scope = 20
 
 def myn():
-    local_v =40
-    print('Access to Global', my_scope)
+    notlocal_v =40
 
-    myn()
+    def myn2():
+        local_v = 10
+        print('Access to Scope', my_scope)
+        print('Access to notlocal', notlocal_v )
+    myn2()
+    
+myn()
