@@ -1,0 +1,16 @@
+#file = open('file_handling.txt', mode = 'r' )
+
+#data = file.readline()
+
+#print(data)
+
+#file.close()
+
+
+file = open('wildwikid.txt', mode = 'w')
+
+data = file.writelines('nobody knows that shes on fire')
+
+print(data)
+
+file.close()
